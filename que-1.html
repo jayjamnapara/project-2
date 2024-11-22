@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>que-1</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function billamount(){
+        let unit = prompt("enter the units:")
+        let billamount = 0
+
+        if(unit <= 100){
+            billamount = 100 * 1
+        }
+        else if(unit <= 200){
+            billamount = 100 * 1 + (unit - 100) * 2
+        }
+        else{
+            billamount = 100 * 1 + 100 * 2 + (unit - 200) * 3
+        }
+
+        console.log("total bill consumed:" + billamount)
+    }
+billamount()
+</script>
